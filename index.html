@@ -562,6 +562,54 @@
       color: #C0C0C0;
     }
 
+    /* ── Honeymoon Fund ──────────────────────────────────────────── */
+    #honeyfund {
+      background: #0c0c0c;
+    }
+    .honeyfund-qr {
+      width: clamp(180px, 26vw, 320px);
+      height: clamp(180px, 26vw, 320px);
+      object-fit: contain;
+      display: block;
+      margin: clamp(1.5rem, 4vh, 3rem) auto 0;
+      border: 1px solid rgba(192, 192, 192, 0.2);
+      padding: clamp(10px, 1.5vw, 20px);
+      background: #fff;
+    }
+    .honeyfund-qr-label {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: clamp(0.55rem, 1.1vw, 0.85rem);
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: rgba(192, 192, 192, 0.6);
+      margin-top: clamp(0.75rem, 1.5vh, 1.25rem);
+    }
+    .honeyfund-btn {
+      display: inline-block;
+      border: 3px solid rgba(255, 255, 255, 0.85);
+      border-radius: 20px;
+      padding: clamp(0.9rem, 2.2vh, 1.4rem) clamp(1.8rem, 3.5vw, 2.8rem);
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: clamp(0.7rem, 1.3vw, 1.1rem);
+      letter-spacing: 0.38em;
+      text-transform: uppercase;
+      color: #ffffff;
+      text-decoration: none;
+      background: transparent;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      margin-top: clamp(1.5rem, 3.5vh, 3rem);
+    }
+    .honeyfund-btn:hover { background: rgba(255, 255, 255, 0.08); }
+    .honeyfund-qr-wrap { display: block; }
+    .honeyfund-btn-wrap { display: none; }
+    @media (max-width: 640px) {
+      .honeyfund-qr-wrap { display: none; }
+      .honeyfund-btn-wrap { display: block; }
+    }
+
     /* ── Footer ───────────────────────────────────────────────────── */
     footer {
       text-align: center;
@@ -850,6 +898,49 @@
     </p>
 
     <div class="h-rule reveal-fade rv-d4" aria-hidden="true"></div>
+
+    <p class="section-eyebrow reveal-fade rv-d4" style="margin-top: clamp(2rem, 5vh, 4rem);">Dress Attire</p>
+    <p class="activities-body reveal rv-d5" style="font-size: clamp(1rem, 2.2vw, 1.6rem); max-width: 560px; margin-top: clamp(0.4rem, 1vh, 0.8rem);">
+      Skip the traditional wedding whites and blacks &mdash; this is a New Year&rsquo;s Eve party! Come dressed to celebrate. Think festive, glamorous, and ready to ring in the New Year in style.
+    </p>
+
+  </section>
+
+  <!-- ─── Section divider ─── -->
+  <div class="section-sep" aria-hidden="true">
+    <div class="main-divider reveal-fade">
+      <div class="div-line"></div>
+      <div class="div-center"><img src="Assets/divider main.png" alt=""></div>
+      <div class="div-line right-line"></div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════ HONEYMOON FUND ═══════════════════ -->
+  <section id="honeyfund" class="section" aria-label="Honeymoon Fund">
+
+    <p class="section-eyebrow reveal-fade">A Little Extra Love</p>
+    <h2 class="section-title reveal-up rv-d1">Honeymoon Fund</h2>
+
+    <div class="sub-divider-row reveal-divider rv-d2" aria-hidden="true">
+      <div class="sub-line"></div>
+      <div class="sub-div-center"><img src="Assets/divider sub.png" alt=""></div>
+      <div class="sub-line sub-line-right"></div>
+    </div>
+
+    <p class="activities-body reveal rv-d2" style="font-size: clamp(1rem, 2.2vw, 1.6rem); max-width: 560px;">
+      Your presence is the greatest gift, but if you&rsquo;d like to contribute to our honeymoon adventure, we&rsquo;d be so grateful.
+    </p>
+
+    <!-- Desktop: QR code -->
+    <div class="honeyfund-qr-wrap reveal-scale rv-d3">
+      <img class="honeyfund-qr" src="Assets/honeyfund-qr.png" alt="Honeyfund QR code — scan to donate">
+      <p class="honeyfund-qr-label">Scan to visit our Honey Fund</p>
+    </div>
+
+    <!-- Mobile: button -->
+    <div class="honeyfund-btn-wrap reveal-scale rv-d3">
+      <a class="honeyfund-btn" href="https://www.honeyfund.com/site/dove-lua-12-31-2026" target="_blank" rel="noopener noreferrer">Visit Our Honey Fund</a>
+    </div>
 
   </section>
 
